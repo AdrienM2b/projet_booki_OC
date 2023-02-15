@@ -1,2 +1,74 @@
-"index.html"
-
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Booki</title>
+        <link rel="stylesheet" href="https://kit.fontawesome.com/26a0d164a3.css" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <header>
+            <div class="logo_booki"><img src="/Users/adrienmarchetti/Documents/Projet_Booki_Marchetti_Adrien/Images Booki/logo/Booki.png" alt="logo booki" id="logo_img"></div>
+            <nav>
+                <ul id="lien_navigation">
+                    <li>
+                        <a href="">Hebergements</a>
+                    </li>
+                    <li>
+                        <a href="">Activités</a>
+                    </li>                
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="en-tete">
+                <div id="titre_principal">
+                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <p>En plein centre-ville ou en pleine nature</p>
+                </div>
+                <div id="formulaire-container">
+                        <form id="apparance-formulaire">
+                        <div class="centrer-verticalement">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                            <input id="apparance-champ" type="text" placeholder="Marseille, France">
+                            <button id="bouton-recherche">Rechercher</button>
+                        </form>
+                </div>
+            </div>
+            <div class="bloc-filtre-description colonne">
+                <div class="filtre ligne">
+                    <div class="filtres-bouton ligne">
+                        <p>Filtres</p>
+                    </div>
+                    <div class="apparance-filtres ligne">
+                        <i class="fa-solid fa-money-bill-wave"></i>
+                        <a href="">Économique</a>
+                    </div>
+                    <div class="apparance-filtres ligne">
+                        <i class="fa-solid fa-person"></i>
+                        <a href="">Familiale</a>
+                    </div>
+                    <div class="apparance-filtres ligne">
+                        <i class="fa-solid fa-heart"></i>                    
+                        <a href="">Romantique</a>
+                    </div>
+                    <div class="apparance-filtres ligne">
+                        <i class="fa-solid fa-dog"></i>
+                        <a href="">Animaux autorisés</a>
+                    </div>
+                </div>
+                <div class="description ligne">
+                    <i class="fa-solid fa-info"></i>
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>
+            </div>    
+        </main>
+    </body>
+</html>

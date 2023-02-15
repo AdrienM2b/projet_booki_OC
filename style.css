@@ -13,8 +13,14 @@ h1, h2, h3, p, ul, a, li{
     font-family: Raleway;
 }
 
+
 a:visited{
+    text-decoration: none;
     color: black;
+}
+
+a{
+    text-decoration: none;
 }
 
 /* FLEX COLUMN */
@@ -94,6 +100,10 @@ nav li{
     justify-content: center;
 }
 
+nav li a:hover{
+    color: #0065FC;
+}
+
 
 nav li:hover:before {
     content: "";
@@ -102,11 +112,10 @@ nav li:hover:before {
     width: 162px;
     top: 0px;
     background-color: #0065FC;
+    color: #0065FC;
 }
 
-a{
-    text-decoration: none;
-}
+
 
 /* EN-TETE */
 .en-tete{
@@ -241,6 +250,10 @@ input::placeholder {
     align-items: flex-start;
 }
 
+.description{
+    margin-bottom: 30px;
+}
+
 /* cercle icone information */
 
 .cercle{
@@ -255,3 +268,172 @@ input::placeholder {
     font-size: 12px;
     color: #0065FC;
 }
+
+/* section affichage hebergements */
+
+.affichage_hebergements{
+    height: 626px;
+    display: grid;
+    grid-template-columns: 60% 40px 30%;
+}
+
+
+/* affichage hebergements */
+
+.hebergements_ville{
+    display: grid;
+    grid-template-rows: 20% 60% 20%;
+    align-items: center;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding: 0 30px;
+}
+
+.hebergements_ville p:last-child{
+    font-weight: 700;
+}
+
+.organized_card{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+
+/* card */
+
+
+.card{
+    height: 180px;
+    width: 210px;
+    display: grid;
+    grid-template-rows: 60% 40%;
+    border-radius: 20px;
+    background-color: white;
+    align-items: flex-start;
+    box-shadow: 0px 0px 14px -4px grey;
+    margin: 10px 0px;
+}
+
+.card_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 5px solid white;
+    box-sizing: border-box;
+    border-radius: 20px 20px 0px 0px;
+}
+
+/* texte de la card */
+
+.text_card{
+    margin-left: 16px;
+    display: grid;
+    grid-template-rows: 10% 40% 40% 40%;
+}
+
+.text_card h3{
+    font-size: 16px;
+    font-weight: 700;
+    grid-row: 2;
+}
+
+.text_card p{
+    font-size: 14px;
+    font-weight: 400;
+    grid-row: 3;
+}
+
+.rate{
+    grid-row: 4;
+    color: #0065FC;
+}
+
+div .rate .fa-solid:last-child{
+    color: #D9D9D9;
+}
+
+
+
+/* section hebergemets populaire */
+
+.hebergements_populaire{
+    height: 625px;
+    width: 420px;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    grid-column: 3;
+}
+
+/* titre de la section populaire */
+
+.popular_card_title{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.fa-solid.fa-chart-line{
+    color: #0065FC;
+}
+
+/* popular card */
+
+.popular_card{
+    height: 144px;
+    width: 343px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 14px -4px grey;
+    display: grid;
+    grid-template-columns: 40% 50% 10%;
+}
+
+.popular_card_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 5px solid #FFFFFF;
+    border-radius: 20px 0px 0px 20px;
+    box-sizing: border-box;
+}
+
+/* texte de la popular card */
+
+.text_popular_card{
+    margin-left: 16px;
+    display: grid;
+    grid-template-rows: 10% 25% 25% 10% 25%;
+    align-items: center;
+}
+
+.text_popular_card h3{
+    font-size: 16px;
+    font-weight: 700;
+    grid-row: 2;
+}
+
+.text_popular_card p{
+    font-size: 14px;
+    font-weight: 400;
+    grid-row: 3;
+}
+
+.rate_popular_card{
+    grid-row: 5;
+    color: #0065FC;
+}
+
+.fa-solid.fa-star{
+    font-size: 12px;
+    color: #0065FC;
+}
+
+div .rate_popular_card .fa-solid:last-child{
+    color: #D9D9D9;
+}
+

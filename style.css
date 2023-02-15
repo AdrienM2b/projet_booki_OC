@@ -1,1 +1,242 @@
-"style.css"
+*{
+        margin: 0;
+        padding: 0;
+}
+
+body{
+    max-width: 1400px;
+    height: auto;
+    margin-left: 55px;
+}
+
+h1, h2, h3, p, ul, a, li{
+    font-family: Raleway;
+}
+
+a:visited{
+    color: black;
+}
+
+/* FLEX COLUMN */
+
+.colonne{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* FLEX ROW  */
+
+.ligne{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+}
+
+/* HEADER */
+
+header{
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* LOGO */
+
+.logo_booki{
+    width: 60px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#logo_img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* NAVIGATION */
+
+nav{
+    width: 381px;
+    height: 100%;
+    display: flex;
+    align-items: center;    
+}
+
+
+nav ul{
+    list-style-type: none;
+    font-weight: 400;
+}
+
+#lien_navigation{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav li{
+    width: 162px;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+nav li:hover:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 162px;
+    top: 0px;
+    background-color: #0065FC;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* EN-TETE */
+.en-tete{
+    display: flex;
+    flex-direction: column;
+}
+
+/* TITRE */
+
+#titre_principal{
+    width: 600px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+#titre_principal h1{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+#titre_principal p{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+/* formulaire */
+
+#formulaire-container{
+    width: 360px;
+    height: 50px;
+}
+
+#apparance-formulaire{
+    display: grid;
+    grid-template-columns: 10% 60% 30%;
+    height: 100%;
+}
+
+#apparance-champ{
+    border-bottom: 1px solid #D9D9D9;
+    border-top: 1px solid #D9D9D9;
+    border-left: hidden;
+    border-right: hidden;
+}
+
+#bouton-recherche{
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    background-color: #0065FC;
+    border: 1px solid #0065FC;
+    border-radius: 0px 15px 15px 0px;
+}
+
+input{
+    padding-left: 20px;
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 700;
+    opacity: 1;
+    color: black;
+}
+
+
+input::placeholder {
+    font-weight: 700;
+    opacity: 1;
+    color: black;
+}
+
+
+/* icone */
+
+.centrer-verticalement{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #D9D9D9;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.fa-solid.fa-location-dot{
+    color: black;
+    text-align: center;
+
+}
+
+
+/* filtres */
+
+.filtre{
+    width: 914px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.filtre.ligne{
+    justify-content: space-between;
+}
+
+.filtres-bouton{
+    height: 48px;
+}
+
+.apparance-filtres{
+    width: 175px;
+    height: 48px;
+    border: 2px solid #D9D9D9;
+    border-radius: 25px;
+}
+
+.apparance-filtres a{
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+/* changement de couleur hover sur les filtres */
+
+.apparance-filtres:hover{
+    background-color: #DEEBFF;
+}
+
+
+/* description filtre */
+
+.bloc-filtre-description{
+    align-items: flex-start;
+}

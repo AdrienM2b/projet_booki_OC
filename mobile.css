@@ -1,0 +1,11 @@
+@media screen and (max-width: 768px){
+    header{
+        margin-top: 20px;
+        flex-direction: column;
+    }
+
+    .logo_booki{
+        height: 0;
+    }
+}
+    

@@ -2,6 +2,7 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Booki</title>
         <link rel="stylesheet" href="https://kit.fontawesome.com/26a0d164a3.css" crossorigin="anonymous">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,6 +13,8 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="tablet.css">
+        <link rel="stylesheet" href="mobile.css">
+        <link rel="stylesheet" href="media.css">
     </head>
     <body>
         <header>
@@ -21,10 +24,10 @@
             <nav>
                 <ul id="lien_navigation">
                     <li>
-                        <a href="">Hebergements</a>
+                        <a href="#hebergements">Hebergements</a>
                     </li>
                     <li>
-                        <a href="">Activités</a>
+                        <a href="#activite">Activités</a>
                     </li>                
                 </ul>
             </nav>
@@ -36,11 +39,11 @@
                     <p>En plein centre-ville ou en pleine nature</p>
                 </div>
                 <div id="formulaire-container">
-                        <form id="apparance-formulaire">
+                        <form id="apparence-formulaire">
                         <div class="centrer-verticalement">
                             <i class="fa-solid fa-location-dot"></i>
                         </div>
-                            <input id="apparance-champ" type="text" placeholder="Marseille, France">
+                            <input id="apparence-champ" type="text" placeholder="Marseille, France">
                             <button id="bouton-recherche">Rechercher</button>
                         </form>
                 </div>
@@ -50,21 +53,23 @@
                     <div class="filtres-bouton">
                         <p>Filtres</p>
                     </div>
-                    <div class="apparance-filtres">
+                    <div class="filtres_organized">
+                        <div class="apparence-filtres">
                         <i class="fa-solid fa-money-bill-wave"></i>
                         <a href="">Économique</a>
-                    </div>
-                    <div class="apparance-filtres">
+                        </div>
+                        <div class="apparence-filtres">
                         <i class="fa-solid fa-person"></i>
                         <a href="">Familiale</a>
-                    </div>
-                    <div class="apparance-filtres">
+                        </div>
+                        <div class="apparence-filtres">
                         <i class="fa-solid fa-heart"></i>                    
                         <a href="">Romantique</a>
-                    </div>
-                    <div class="apparance-filtres">
+                        </div>
+                        <div class="apparence-filtres">
                         <i class="fa-solid fa-dog"></i>
                         <a href="">Animaux autorisés</a>
+                        </div>
                     </div>
                 </div>
                 <div class="description">
@@ -74,27 +79,30 @@
                     <p>Plus de 500 logements sont disponibles dans cette ville</p>
                 </div>
             </div>  
-            <section class="affichage_hebergements">
+            <section class="affichage_hebergements" id="hebergements">
                 <div class="hebergements_ville">
                     <div>
                         <h2>Hébergements à Marseille</h2>
                     </div>
                         <div class="organized_card">
-                            <div class="card">
-                        <img class="card_img" src="/Users/adrienmarchetti/Documents/Projet_Booki_Marchetti_Adrien/Images Booki/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
-                        <div class="text_card">
-                            <h3>Auberge La Canebière</h3>
-                            <p>Nuit à partir de 25€</p>
-                            <div class="rate">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                        </div>
-                            </div>
-                            <div class="card">
+                            <a class="link_card" href="">
+                                <div class="card">
+                                        <img class="card_img" src="/Users/adrienmarchetti/Documents/Projet_Booki_Marchetti_Adrien/Images Booki/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
+                                    <div class="text_card">
+                                        <h3>Auberge La Canebière</h3>
+                                        <p>Nuit à partir de 25€</p>
+                                        <div class="rate">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="link_card" href="">
+                                <div class="card">
                         <img class="card_img" src="/Users/adrienmarchetti/Documents/Projet_Booki_Marchetti_Adrien/Images Booki/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="">
                         <div class="text_card">
                             <h3>Hôtel du port</h3>
@@ -107,8 +115,10 @@
                                 <i class="fa-solid fa-star"></i>
                             </div>
                         </div>
-                            </div>
-                            <div class="card">
+                                </div>
+                            </a>
+                            <a class="link_card" href="">
+                                <div class="card">
                         <img class="card_img" src="/Users/adrienmarchetti/Documents/Projet_Booki_Marchetti_Adrien/Images Booki/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="">
                         <div class="text_card">
                             <h3>Hôtel Les mouettes</h3>
@@ -121,8 +131,10 @@
                                 <i class="fa-solid fa-star"></i>
                             </div>
                         </div>
-                            </div>
-                            <div class="card">
+                                </div>
+                            </a>
+                            <a class="link_card" href="">
+                                <div class="card">
                         <img class="card_img" src="/Users/adrienmarchetti/Documents/Projet_Booki_Marchetti_Adrien/Images Booki/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="">
                         <div class="text_card">
                             <h3>Hôtel de la mer</h3>
@@ -135,8 +147,10 @@
                                 <i class="fa-solid fa-star"></i>
                             </div>
                         </div>
-                            </div>
-                            <div class="card">
+                                </div>
+                            </a>
+                            <a class="link_card" href="">
+                                <div class="card">
                         <img class="card_img" src="/Users/adrienmarchetti/Documents/Projet_Booki_Marchetti_Adrien/Images Booki/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="">
                         <div class="text_card">
                             <h3>Auberge Le Panier</h3>
@@ -149,8 +163,10 @@
                                 <i class="fa-solid fa-star"></i>
                             </div>
                         </div>
-                            </div>
-                            <div class="card">
+                                </div>
+                            </a>
+                            <a class="link_card" href="">
+                                <div class="card">
                         <img class="card_img" src="/Users/adrienmarchetti/Documents/Projet_Booki_Marchetti_Adrien/Images Booki/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="">
                         <div class="text_card">
                             <h3>Hôtel Chez Amina</h3>
@@ -163,7 +179,8 @@
                                 <i class="fa-solid fa-star"></i>
                             </div>
                         </div>
-                            </div>
+                                </div>
+                            </a>
                         </div>
                     <div>
                         <p>Afficher plus</p>
@@ -175,7 +192,8 @@
                         <i class="fa-solid fa-chart-line"></i>
                     </div>
                     <div class="organized_popular_card">
-                        <div class="popular_card">
+                        <a class="link_popular_card" href="">
+                            <div class="popular_card">
                         <img class="popular_card_img" src="/Users/adrienmarchetti/Documents/Projet_Booki_Marchetti_Adrien/Images Booki/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
                         <div class="text_popular_card">
                             <h3>Hôtel Le soleil du matin</h3>
@@ -188,8 +206,10 @@
                                 <i class="fa-solid fa-star"></i>
                             </div>
                         </div>
-                        </div>
-                        <div class="popular_card">
+                            </div>
+                        </a>
+                        <a class="link_popular_card" href="">
+                            <div class="popular_card">
                         <img class="popular_card_img" src="/Users/adrienmarchetti/Documents/Projet_Booki_Marchetti_Adrien/Images Booki/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg">
                         <div class="text_popular_card">
                             <h3>Chambres d’hôtes Au cœur de l’eau</h3>
@@ -202,8 +222,10 @@
                                 <i class="fa-solid fa-star"></i>
                             </div>
                         </div>
-                        </div>
-                        <div class="popular_card">
+                            </div>
+                        </a>
+                        <a class="link_popular_card" href="">    
+                            <div class="popular_card">
                         <img class="popular_card_img" src="/Users/adrienmarchetti/Documents/Projet_Booki_Marchetti_Adrien/Images Booki/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg">
                         <div class="text_popular_card">
                             <h3>Hôtel Bleu et Blanc</h3>
@@ -216,31 +238,40 @@
                                 <i class="fa-solid fa-star"></i>
                             </div>
                         </div>
-                        </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </section> 
-            <section class="activites">
+            <section class="activites" id="activite">
                 <div class="activites_title">
                     <h2>Activités à Marseille</h2>
                 </div>
                 <div class="activite_card_organized">
-                    <div class="activite_card">
+                    <a class="link_activite_card" href="">
+                        <div class="activite_card">
                     <img class="activite_card_img" src="/Users/adrienmarchetti/Documents/Projet_Booki_Marchetti_Adrien/Images Booki/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
                     <p>Vieux-Port</p>
-                    </div>
-                    <div class="activite_card">
+                        </div>
+                    </a>
+                    <a class="link_activite_card" href="">
+                        <div class="activite_card">
                     <img class="activite_card_img" src="/Users/adrienmarchetti/Documents/Projet_Booki_Marchetti_Adrien/Images Booki/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="">
                     <p>Fort de Pomègues</p>
-                    </div>
-                    <div class="activite_card">
+                        </div>
+                    </a>
+                    <a class="link_activite_card" href="">
+                        <div class="activite_card">
                     <img class="activite_card_img" src="/Users/adrienmarchetti/Documents/Projet_Booki_Marchetti_Adrien/Images Booki/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="">
                     <p>Parc national des Calanques</p>
-                    </div>
-                    <div class="activite_card">
+                        </div>
+                    </a>
+                    <a class="link_activite_card" href="">
+                        <div class="activite_card">
                     <img class="activite_card_img" src="/Users/adrienmarchetti/Documents/Projet_Booki_Marchetti_Adrien/Images Booki/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="">
                     <p>Notre-Dame-de-la-Garde</p>
-                    </div>
+                        </div>
+                    </a>
                 </div>
             </section>
         </main>

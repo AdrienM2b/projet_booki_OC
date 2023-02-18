@@ -2,6 +2,10 @@
 
     .bloc-filtre-description{
         margin-bottom: 0;
+        width: 100%;
+    }
+    #apparence-formulaire{
+    grid-template-columns: 10% 60% 40%;
     }
 
     /* changements d'orientation des resultats*/
@@ -18,8 +22,12 @@
         padding: 4% 4%;
     }
 
-    .card{
+    .link_card{
         height: 45%;
+    }
+
+    .card{
+
     }
 
 
@@ -31,6 +39,7 @@
         padding: 4% 4%;
         justify-content: space-between;
     }
+
 
     .popular_card_title{
         justify-content: space-between;
@@ -44,7 +53,7 @@
 
     /* reduction de la taillet de la card et de la police */
 
-    .popular_card {
+    .link_popular_card{
         height: 100%;
         width: 32%;
     }
@@ -67,7 +76,7 @@
         height: 68%;
     }
 
-    .activite_card {
+    .link_activite_card{
         height: 100%;
         width: 20%;
     }
@@ -77,4 +86,3 @@
         align-items: center;
     }
 }
-
